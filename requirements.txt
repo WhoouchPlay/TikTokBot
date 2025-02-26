@@ -1,3 +1,4 @@
+python==3.10.6
 aiogram==2.15
 python-dotenv
 requests
