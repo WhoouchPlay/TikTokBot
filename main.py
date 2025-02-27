@@ -18,7 +18,6 @@ bot = Bot(token=TOKEN, proxy=proxy_url)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 
-
 @dp.message_handler(commands="start")
 async def start(message: types.Message):
     await message.answer(text='Привіт! Я - бот-завантажувач🎲\nНадішли мені посилання на TikTok-відео, і я відправлю його тобі без водяного знаку!')
