@@ -47,6 +47,5 @@ async def start(message: types.Message):
         await msg.edit_text("Вибачте я не розумію вас \nВведіть чітке питання, або ж надішліть вірне посилання.")
 
 
-
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
