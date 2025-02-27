@@ -11,9 +11,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
-APITOKEN = os.getenv("APITOKEN")
-print(f"TOKEN: {TOKEN}")
-print(f"APITOKEN: {APITOKEN}")
 proxy_url = "http://proxy.server:3128"
 logging.basicConfig(level=logging.INFO)
 
