@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
-proxy_url = "http://proxy.server:8000"
+proxy_url = "http://proxy.server:3128"
 logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=TOKEN, proxy=proxy_url)
