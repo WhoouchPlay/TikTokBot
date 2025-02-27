@@ -27,14 +27,14 @@ async def start(message: types.Message):
     link = message.text
 
     msg = await message.answer("Будь ласка зачекайте, оброблюємо ваш запит.")
-    url = "https://tiktok-video-no-watermark2.p.rapidapi.com/"
+    url = "https://tiktok-download-video1.p.rapidapi.com/getVideo"
 
     print(link)
 
     querystring = {"url": link, "hd": "1"}
     headers = {
         "x-rapidapi-key": os.getenv("APITOKEN"),
-        "x-rapidapi-host": "tiktok-video-no-watermark2.p.rapidapi.com"
+        "x-rapidapi-host": "tiktok-download-video1.p.rapidapi.com"
     }
     try:
         response = requests.get(url, headers=headers, params=querystring)
